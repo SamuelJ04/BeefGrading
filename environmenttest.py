@@ -1,5 +1,5 @@
-import tensorflow as tf
+import torch
+import torchvision
 
-#print(tf.reduce_sum(tf.random.normal([1000, 1000])))
-#print()
-print(tf.config.list_physical_devices('GPU'))
+print(torch.cuda.is_available())
+print(torch.version.cuda)

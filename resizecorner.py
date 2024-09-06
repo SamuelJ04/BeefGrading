@@ -15,7 +15,6 @@ def crop_and_save(input_folder, output_folder):
         if filename.endswith(".jpg"):
             img_path = os.path.join(input_folder, filename)
             img = Image.open(img_path)
-            #img_resized = img.resize((224,224), 0)
             width, height = img.size
             left = width - 224
             top = height -224
